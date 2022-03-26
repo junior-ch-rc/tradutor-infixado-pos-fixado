@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/junior/Downloads/Compiladores/TP1/Lab08/Debug",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/tradutor.dir/lexer.cpp.o -c /home/junior/Downloads/Compiladores/TP1/Lab08/lexer.cpp",
+  "file": "/home/junior/Downloads/Compiladores/TP1/Lab08/lexer.cpp"
+},
+{
+  "directory": "/home/junior/Downloads/Compiladores/TP1/Lab08/Debug",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/tradutor.dir/parser.cpp.o -c /home/junior/Downloads/Compiladores/TP1/Lab08/parser.cpp",
+  "file": "/home/junior/Downloads/Compiladores/TP1/Lab08/parser.cpp"
+},
+{
+  "directory": "/home/junior/Downloads/Compiladores/TP1/Lab08/Debug",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/tradutor.dir/symtable.cpp.o -c /home/junior/Downloads/Compiladores/TP1/Lab08/symtable.cpp",
+  "file": "/home/junior/Downloads/Compiladores/TP1/Lab08/symtable.cpp"
+},
+{
+  "directory": "/home/junior/Downloads/Compiladores/TP1/Lab08/Debug",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/tradutor.dir/error.cpp.o -c /home/junior/Downloads/Compiladores/TP1/Lab08/error.cpp",
+  "file": "/home/junior/Downloads/Compiladores/TP1/Lab08/error.cpp"
+},
+{
+  "directory": "/home/junior/Downloads/Compiladores/TP1/Lab08/Debug",
+  "command": "/usr/bin/c++    -g   -std=gnu++17 -o CMakeFiles/tradutor.dir/tradutor.cpp.o -c /home/junior/Downloads/Compiladores/TP1/Lab08/tradutor.cpp",
+  "file": "/home/junior/Downloads/Compiladores/TP1/Lab08/tradutor.cpp"
+}
+]

@@ -1,0 +1,3 @@
+/home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles/rebuild_cache.dir
+/home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles/edit_cache.dir
+/home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles/tradutor.dir
