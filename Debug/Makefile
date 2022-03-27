@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/junior/Downloads/Compiladores/TP1/Lab08/Debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named tradutor
+# Target rules for targets named tip
 
 # Build rule for target.
-tradutor: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tradutor
-.PHONY : tradutor
+tip: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tip
+.PHONY : tip
 
 # fast build rule for target.
-tradutor/fast:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/build
-.PHONY : tradutor/fast
+tip/fast:
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/build
+.PHONY : tip/fast
 
 error.o: error.cpp.o
 
@@ -129,7 +129,7 @@ error.o: error.cpp.o
 
 # target to build an object file
 error.cpp.o:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/error.cpp.o
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/error.cpp.o
 .PHONY : error.cpp.o
 
 error.i: error.cpp.i
@@ -138,7 +138,7 @@ error.i: error.cpp.i
 
 # target to preprocess a source file
 error.cpp.i:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/error.cpp.i
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/error.cpp.i
 .PHONY : error.cpp.i
 
 error.s: error.cpp.s
@@ -147,7 +147,7 @@ error.s: error.cpp.s
 
 # target to generate assembly for a file
 error.cpp.s:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/error.cpp.s
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/error.cpp.s
 .PHONY : error.cpp.s
 
 lexer.o: lexer.cpp.o
@@ -156,7 +156,7 @@ lexer.o: lexer.cpp.o
 
 # target to build an object file
 lexer.cpp.o:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/lexer.cpp.o
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/lexer.cpp.o
 .PHONY : lexer.cpp.o
 
 lexer.i: lexer.cpp.i
@@ -165,7 +165,7 @@ lexer.i: lexer.cpp.i
 
 # target to preprocess a source file
 lexer.cpp.i:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/lexer.cpp.i
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/lexer.cpp.i
 .PHONY : lexer.cpp.i
 
 lexer.s: lexer.cpp.s
@@ -174,7 +174,7 @@ lexer.s: lexer.cpp.s
 
 # target to generate assembly for a file
 lexer.cpp.s:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/lexer.cpp.s
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/lexer.cpp.s
 .PHONY : lexer.cpp.s
 
 parser.o: parser.cpp.o
@@ -183,7 +183,7 @@ parser.o: parser.cpp.o
 
 # target to build an object file
 parser.cpp.o:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/parser.cpp.o
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/parser.cpp.o
 .PHONY : parser.cpp.o
 
 parser.i: parser.cpp.i
@@ -192,7 +192,7 @@ parser.i: parser.cpp.i
 
 # target to preprocess a source file
 parser.cpp.i:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/parser.cpp.i
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/parser.cpp.i
 .PHONY : parser.cpp.i
 
 parser.s: parser.cpp.s
@@ -201,7 +201,7 @@ parser.s: parser.cpp.s
 
 # target to generate assembly for a file
 parser.cpp.s:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/parser.cpp.s
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/parser.cpp.s
 .PHONY : parser.cpp.s
 
 symtable.o: symtable.cpp.o
@@ -210,7 +210,7 @@ symtable.o: symtable.cpp.o
 
 # target to build an object file
 symtable.cpp.o:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/symtable.cpp.o
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/symtable.cpp.o
 .PHONY : symtable.cpp.o
 
 symtable.i: symtable.cpp.i
@@ -219,7 +219,7 @@ symtable.i: symtable.cpp.i
 
 # target to preprocess a source file
 symtable.cpp.i:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/symtable.cpp.i
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/symtable.cpp.i
 .PHONY : symtable.cpp.i
 
 symtable.s: symtable.cpp.s
@@ -228,7 +228,7 @@ symtable.s: symtable.cpp.s
 
 # target to generate assembly for a file
 symtable.cpp.s:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/symtable.cpp.s
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/symtable.cpp.s
 .PHONY : symtable.cpp.s
 
 tradutor.o: tradutor.cpp.o
@@ -237,7 +237,7 @@ tradutor.o: tradutor.cpp.o
 
 # target to build an object file
 tradutor.cpp.o:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/tradutor.cpp.o
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/tradutor.cpp.o
 .PHONY : tradutor.cpp.o
 
 tradutor.i: tradutor.cpp.i
@@ -246,7 +246,7 @@ tradutor.i: tradutor.cpp.i
 
 # target to preprocess a source file
 tradutor.cpp.i:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/tradutor.cpp.i
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/tradutor.cpp.i
 .PHONY : tradutor.cpp.i
 
 tradutor.s: tradutor.cpp.s
@@ -255,7 +255,7 @@ tradutor.s: tradutor.cpp.s
 
 # target to generate assembly for a file
 tradutor.cpp.s:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/tradutor.cpp.s
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/tradutor.cpp.s
 .PHONY : tradutor.cpp.s
 
 # Help Target
@@ -264,9 +264,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... tradutor"
+	@echo "... rebuild_cache"
+	@echo "... tip"
 	@echo "... error.o"
 	@echo "... error.i"
 	@echo "... error.s"

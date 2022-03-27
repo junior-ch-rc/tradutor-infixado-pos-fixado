@@ -100,6 +100,8 @@ void Parser::Stmts()
             // stmt -> expr; 
             case Tag::ID: case Tag::NUM: 
                 Expr();
+                // no fim de cada expressão, pule a linha.
+                cout << endl;
                 if(!Match(';'))
                 {
                     stringstream ss;
@@ -111,8 +113,6 @@ void Parser::Stmts()
             default: return;
         }
     }
-    // no fim de cada instrução, pule a linha.
-    cout << endl;   
 }
 
 void Parser::Expr()

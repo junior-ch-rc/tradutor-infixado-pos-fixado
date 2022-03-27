@@ -18,6 +18,20 @@ string
 sstream
 -
 
+/home/junior/Downloads/Compiladores/TP1/Lab08/parser.cpp
+parser.h
+/home/junior/Downloads/Compiladores/TP1/Lab08/parser.h
+error.h
+/home/junior/Downloads/Compiladores/TP1/Lab08/error.h
+iostream
+-
+sstream
+-
+cctype
+-
+string.h
+-
+
 /home/junior/Downloads/Compiladores/TP1/Lab08/parser.h
 lexer.h
 /home/junior/Downloads/Compiladores/TP1/Lab08/lexer.h
@@ -29,18 +43,4 @@ unordered_map
 -
 string
 -
-
-/home/junior/Downloads/Compiladores/TP1/Lab08/tradutor.cpp
-iostream
--
-fstream
--
-cstring
--
-string.h
--
-parser.h
-/home/junior/Downloads/Compiladores/TP1/Lab08/parser.h
-error.h
-/home/junior/Downloads/Compiladores/TP1/Lab08/error.h
 

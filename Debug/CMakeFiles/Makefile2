@@ -53,7 +53,7 @@ CMAKE_BINARY_DIR = /home/junior/Downloads/Compiladores/TP1/Lab08/Debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/tradutor.dir/all
+all: CMakeFiles/tip.dir/all
 
 .PHONY : all
 
@@ -63,36 +63,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/tradutor.dir/clean
+clean: CMakeFiles/tip.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/tradutor.dir
+# Target rules for target CMakeFiles/tip.dir
 
 # All Build rule for target.
-CMakeFiles/tradutor.dir/all:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/depend
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target tradutor"
-.PHONY : CMakeFiles/tradutor.dir/all
+CMakeFiles/tip.dir/all:
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/depend
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target tip"
+.PHONY : CMakeFiles/tip.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/tradutor.dir/rule: cmake_check_build_system
+CMakeFiles/tip.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tradutor.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/tip.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/junior/Downloads/Compiladores/TP1/Lab08/Debug/CMakeFiles 0
-.PHONY : CMakeFiles/tradutor.dir/rule
+.PHONY : CMakeFiles/tip.dir/rule
 
 # Convenience name for target.
-tradutor: CMakeFiles/tradutor.dir/rule
+tip: CMakeFiles/tip.dir/rule
 
-.PHONY : tradutor
+.PHONY : tip
 
 # clean rule for target.
-CMakeFiles/tradutor.dir/clean:
-	$(MAKE) -f CMakeFiles/tradutor.dir/build.make CMakeFiles/tradutor.dir/clean
-.PHONY : CMakeFiles/tradutor.dir/clean
+CMakeFiles/tip.dir/clean:
+	$(MAKE) -f CMakeFiles/tip.dir/build.make CMakeFiles/tip.dir/clean
+.PHONY : CMakeFiles/tip.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
