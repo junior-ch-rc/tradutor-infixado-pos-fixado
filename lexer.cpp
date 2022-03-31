@@ -44,6 +44,9 @@ Token * Lexer::Scan()
 		{
 			while (peek != '\n') {
 				peek = fin.get();
+				if (peek == EOF) {
+					break;
+				}
 			}
 			peek = fin.get();
 		} 

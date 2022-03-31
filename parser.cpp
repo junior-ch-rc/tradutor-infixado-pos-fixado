@@ -15,6 +15,8 @@ void Parser::Program()
     if (!Match(Tag::MATHT))
         throw SyntaxError(scanner.Lineno(), "\'math\' era esperado");
     Block();
+    if (!Match(EOF))
+        throw SyntaxError(scanner.Lineno(), "\'FIM DE ARQUIVO\' era esperado");
 }
 
 void Parser::Block()

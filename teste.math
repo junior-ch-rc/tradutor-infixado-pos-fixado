@@ -1,4 +1,4 @@
-// arquivo fonte
+/* teste de comentário*/
 math
 {
     int x;
@@ -12,3 +12,4 @@ math
     }
     x;
 }
+/* teste de comentário*/

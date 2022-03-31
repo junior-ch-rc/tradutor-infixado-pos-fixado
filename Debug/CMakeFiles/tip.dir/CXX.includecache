@@ -6,41 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/junior/Downloads/Compiladores/TP1/Lab08/error.h
-string
--
-
-/home/junior/Downloads/Compiladores/TP1/Lab08/lexer.h
-unordered_map
--
-string
--
-sstream
--
-
-/home/junior/Downloads/Compiladores/TP1/Lab08/parser.cpp
-parser.h
-/home/junior/Downloads/Compiladores/TP1/Lab08/parser.h
-error.h
-/home/junior/Downloads/Compiladores/TP1/Lab08/error.h
-iostream
--
-sstream
--
-cctype
--
-string.h
--
-
-/home/junior/Downloads/Compiladores/TP1/Lab08/parser.h
+/home/junior/Downloads/Compiladores/TP1/Lab08/lexer.cpp
 lexer.h
 /home/junior/Downloads/Compiladores/TP1/Lab08/lexer.h
-symtable.h
-/home/junior/Downloads/Compiladores/TP1/Lab08/symtable.h
+fstream
+-
+sstream
+-
 
-/home/junior/Downloads/Compiladores/TP1/Lab08/symtable.h
+/home/junior/Downloads/Compiladores/TP1/Lab08/lexer.h
 unordered_map
 -
 string
+-
+sstream
 -
 
