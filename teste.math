@@ -4,11 +4,11 @@ math
     int x;
     int val;
     x + val;
-    2+(3-5);
+    (2/5) - val;
     {
         float x;
         /* outro x */
-        2 - 3.5 + x;
+        (2 - 3.5) + x;
     }
     x;
 }

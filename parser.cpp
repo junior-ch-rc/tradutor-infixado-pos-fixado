@@ -100,7 +100,7 @@ void Parser::Stmts()
                 Block(); 
                 break;
             // stmt -> expr; 
-            case Tag::ID: case Tag::NUM: 
+            case Tag::ID: case Tag::NUM: case '(':
                 Expr();
                 // no fim de cada expressão, pule a linha.
                 cout << endl;
